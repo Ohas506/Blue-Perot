@@ -237,6 +237,21 @@ jet_data = {
 
 //#startcode
 
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
+
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
+
+document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
+
+$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
+
+$(".container")[0].style.backgroundColor = "#FFFFFF";
+
+document.getElementById("header").src = "https://i.imgur.com/LnpU7Xe.jpeg";
+
+document.body.background = "https://i.imgur.com/nS1OamZ.png";
+
+document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
 campaignTrail_temp.musicOn = true
 campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/rBUFuedHuLuuVmdWZdy4a6BwbsgF27gN"
 
@@ -258,21 +273,5 @@ jukeboxsong = function() {
         campaignTrail_temp.musicSrc = "https://audio.jukehost.co.uk/rBUFuedHuLuuVmdWZdy4a6BwbsgF27gN"
         document.getElementById('campaigntrailmusic').src = campaignTrail_temp.musicSrc
 }
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#700016";
-
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#BFE6FF";
-
-document.getElementsByClassName("game_header")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_title;
-
-$("#game_window")[0].style.backgroundColor = nct_stuff.themes[nct_stuff.selectedTheme].coloring_window;
-
-$(".container")[0].style.backgroundColor = "#FFFFFF";
-
-document.getElementById("header").src = "https://i.imgur.com/LnpU7Xe.jpeg";
-
-document.body.background = "https://i.imgur.com/nS1OamZ.png";
-
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
 
 //#endcode
